@@ -1,0 +1,133 @@
+﻿@model IEnumerable<Quan_Ly_TV.Models.Sach>
+
+@{
+    ViewBag.Title = "ListBook";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Quan_Ly_TV.Models.QuanLyThuVienEntities1 db = new Quan_Ly_TV.Models.QuanLyThuVienEntities1();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danh Mục Sách</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .find {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 35px;
+            margin-right: 11px;
+        }
+
+        .btn-tim {
+            width: 80px;
+            height: 31px;
+            border-radius: 7px;
+            background-color: #646855;
+            color: #fff;
+        }
+
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #eee;
+            }
+
+            table tr:nth-child(even) {
+                background-color: white;
+            }
+
+            table tr:nth-child() {
+                background-color: #555555;
+            }
+
+        .action {
+            margin-left: 20px;
+            width: 90px;
+            border: none;
+            height: 25px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 style="color: #eb1b1b; font-weight: bold">Danh mục sách <img style="width: 40px; height: 40px" src="~/Content/Image/bookshelf_icon-icons.com_54414.png" /></h2>
+        <div>
+            <form method="get" action="/Book/ListBook">
+                <input type="text" class="find" placeholder="Nhập nội dung tìm" name="filter" value="@ViewBag.keyword" />
+                <button style="margin-top:10px" type="submit" class="btn-tim">Tìm Kiếm</button>
+            </form>
+        </div>
+
+        <div class="col-sm-6" style="padding-top: 20px">
+            <a href="/Book/ListBook"><span style="color: red; font-weight: initial">Xem tất cả </span></a>
+        </div>
+
+    </div>
+    <a href="/Book/themmoi" style="display: block;color: #fff;margin-bottom:20px; float: right; background-color: #31708f; height: 26px; text-align: center; width: 100px; line-height: 2;">
+        + Thêm Sách
+    </a>
+    <table class="table">
+        <thead>
+            <tr style=" background-color:#555555; color: #fff">
+                <th>Mã sách</th>
+                <th>Tên sách</th>
+                <th>Thể loại</th>
+                <th>Tác giả</th>
+                <th>Ngày xuất bản</th>
+                <th>Số lượng</th>
+                <th>Ảnh bìa</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.MaSach</td>
+                <td>@item.TenSach</td>
+                <td>
+                    @foreach (var loai in db.TheLoai.ToList())
+                    {
+                        if (loai.MaTheLoai.Equals(item.TheLoai))
+                        {
+                            <span>@loai.TenTheLoai</span>
+                        }
+                    }
+                </td>
+                <td>@item.TacGia</td>
+                <td>@String.Format("{0: dd-MM-yyyy}", item.NgayXuatBan)</td>
+                <td>@item.SoLuong</td>
+                <td><img src="@item.AnhBia" style="width: 100px; height: 120px" /></td>
+                <td><a href="/Book/xoaSach?id=@item.IdSach"><img src="~/Asset/User/images/bin.png" /></a></td>
+                <td><a href="/Book/suaSach?id=@item.IdSach"><img style="width: 20px; height: 20px" src="~/Asset/User/images/edit--v1.png" /></a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <div class="col-sm-6" style="padding-top: 20px">
+        <span style="color: red; font-weight: initial">@TempData["thongbao"]</span>
+    </div>
+</body>
+</html>

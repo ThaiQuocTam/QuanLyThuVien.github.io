@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a2e022888ed045b3a1ad18010288ce9e" Name="Diagram1" ZoomLevel="97">
+        <EntityTypeShape EntityType="QuanLyThuVienModel.CT_PhieuMuon" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.CT_PhieuTra" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.DocGia" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.LoaiDG" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.Login" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.PhanQuyen" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.PhieuMuon" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.PhieuPhat" Width="1.5" PointX="13.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.Sach" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.TheLoai" Width="1.5" PointX="8.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_CT_PhieuMuon_DocGia" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_CT_PhieuMuon_PhieuMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_CT_PhieuTra_PhieuMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_DocGia_LoaiDG" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_PhieuMuon_DocGia" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_Login_PhanQuyen" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_PhieuMuon_Login" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_PhieuPhat_PhieuMuon" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_Sach_TheLoai1" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_PhieuPhat_PhieuMuon1" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_PhieuPhat_PhieuMuon11" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_CT_PhieuMuon_Sach" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

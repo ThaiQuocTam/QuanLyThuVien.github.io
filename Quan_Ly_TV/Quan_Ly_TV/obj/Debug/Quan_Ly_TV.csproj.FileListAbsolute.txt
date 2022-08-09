@@ -1,0 +1,146 @@
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\Quan_Ly_TV.dll.config
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\Quan_Ly_TV.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\Quan_Ly_TV.pdb
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csc.exe
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csc.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csc.rsp
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csi.exe
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csi.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csi.rsp
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.AppContext.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Collections.Immutable.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Console.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.Compression.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.FileSystem.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.Pipes.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.AccessControl.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Claims.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.ValueTuple.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.XPath.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\vbc.exe
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\vbc.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\vbc.rsp
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\VBCSCompiler.exe
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\VBCSCompiler.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.SqlServer.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\Microsoft.Web.Infrastructure.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Helpers.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Mvc.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Razor.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Deployment.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Razor.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.SqlServer.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Razor.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Deployment.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Razor.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Helpers.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Mvc.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.csprojAssemblyReference.cache
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.csproj.CoreCompileInputs.cache
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.csproj.CopyComplete
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.dll
+D:\Hoc ki 2\Công nghệ .NET\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.pdb
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\Quan_Ly_TV.dll.config
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\Quan_Ly_TV.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\Quan_Ly_TV.pdb
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csc.exe
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csc.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csc.rsp
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csi.exe
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csi.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\csi.rsp
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.AppContext.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Collections.Immutable.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Console.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.Compression.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.FileSystem.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.IO.Pipes.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.AccessControl.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Claims.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.ValueTuple.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.XPath.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\vbc.exe
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\vbc.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\vbc.rsp
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\VBCSCompiler.exe
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\roslyn\VBCSCompiler.exe.config
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.SqlServer.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\Microsoft.Web.Infrastructure.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Helpers.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Mvc.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Razor.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Deployment.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Razor.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\EntityFramework.SqlServer.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Razor.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Deployment.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Webpages.Razor.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Helpers.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\System.Web.Mvc.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.csprojAssemblyReference.cache
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.csproj.CoreCompileInputs.cache
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.csproj.CopyComplete
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.dll
+D:\Hoc ki 2\Công nghệ .NET\Thuc Hanh\Quan_Ly_TV\Quan_Ly_TV\obj\Debug\Quan_Ly_TV.pdb

@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <link href="~/Asset/User/css/layoutHome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+<style>
+    .footer {
+        background-color: black;
+        color: white;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        padding-top: 30px;
+        background-color: black;
+        color: white;
+    }
+
+    .a {
+        text-align: left
+    }
+
+
+
+    /*css menu*/
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+        .topnav > a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+            .topnav > a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+        .topnav .icon {
+            display: none;
+        }
+
+    /*css slideshow*/
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .cla {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    ul li{
+        list-style: none
+    }
+</style>
+<body>
+    <div class="">
+        <!-- Header -->
+        <header>
+            <div class="banner">
+                <img  src="~/Content/Image/—Pngtree—green banana leaf book background_1105324.jpg" alt="banner" />
+            </div>
+
+            <div class="topnav" id="myTopnav">
+
+                <a href="@Url.Action("HomeAdmin","Home")" title="Go to homepage">Quản Lý Thư Viện</a>
+                <a href="/DocGia/DsDocGia">Độc Giả</a>
+                <a href="/PhieuMuon/DanhSachPM">Phiếu Mượn</a>
+                <a href="/PhieuTra/DsPhieuTra">Phiếu Trả</a>
+                <a href="/PhieuPhat/DsPhieuPhat">Phiếu Phạt</a>
+                <a href="/TheLoai/DanhSachTL">Thể loại</a>
+                <a href="/Book/ListBook">Quản lý sách</a>
+                <div style="float: right; margin-right: 25px; line-height: 1.3">
+                    <img style="width: 50px;height: 50px;padding: 10px" src="~/Content/Image/png-user-icon-circled-user-icon-2240.png" />
+                    <span style="color: #fff;font-size: 15px">@Session["AdminNV"] @Session["AdminQL"]</span>
+                    <span><a style="color: #fff; text-decoration: none; font-size: 17px;" href="/Login/Logout"><img style="width: 50px; height: 50px; padding: 10px; margin-left: 20px" src="~/Content/Image/1828479.png" />Logout</a></span>
+                </div>
+            </div>      
+        </header>
+
+        <div class="right-content" style="width: 1200px; margin: 31px 75px">
+            @RenderBody()
+        </div>
+        <div class="line-20"></div>
+
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer"> 
+            <div class="w3-row" style="background-color: #611818">
+                <div class=" w3-container w3-quarter">
+                    <h3>Giới thiệu</h3>
+                    <ul>
+                        <li>
+                            <a href="" style="color:white;text-decoration:none">Giới Thiệu</a>
+                        </li>
+                        <li>
+                            <a href="" style="color:white;text-decoration:none">Nội Quy</a>
+                        </li>
+                        <li>
+                            <a href="" style="color:white;text-decoration:none">Hướng dẫn quy trình mượn sách</a>
+                        </li>
+                        <li> <a href="" style="color:white;text-decoration:none">Đăng ký tham gia làm thủ thư</a></li>
+                    </ul>
+                </div>
+                <div class="w3-container w3-quarter">
+                    <h3>Hỗ trợ chúng tôi</h3>
+                    <ul>
+                        <li><a href="" style="color:white">Giới thiệu</a></li>
+                        <li><a href="" style="color:white">Điều khoản và điều kiện</a></li>
+                    </ul>
+                </div>
+                <div class="w3-container w3-quarter">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li>Thái Quốc Tâm</li>
+                        <li>ĐT: + 84 (028) 3 8 225 055</li>
+                        <li>Email: thaiquoctam123@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="w3-container w3-quarter">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li><a href="" style="color:white">Facebook</a></li>
+                        <li><a href="" style="color:white">Youtube</a></li>
+                        <li><a href="" style="color:white">Zalo</a></li>
+                        <li><a href="" style="color:white">Twitter</a></li>
+                        <li><a href="" style="color:white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

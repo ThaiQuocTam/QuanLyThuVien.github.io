@@ -1,0 +1,59 @@
+﻿body {
+    background-image: url('Image/123.png');
+    background-size: cover;
+}
+
+.field-validation-error
+{
+    color:red;
+}
+
+#form-register {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border: 3px solid #f1f1f1;
+    padding: 10px 10px;
+}
+
+#form-login {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    border: 2px solid #ccc;
+    padding: 5px 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+table {
+    background-color:#C4DFE6;
+    width: 500px;
+}
+.title-form
+{
+    text-align:center;
+    font-size:30px;
+}
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid blue;
+}

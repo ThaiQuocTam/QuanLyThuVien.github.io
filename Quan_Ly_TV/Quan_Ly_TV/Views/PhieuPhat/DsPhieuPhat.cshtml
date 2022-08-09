@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Quan_Ly_TV.Models.PhieuPhat>
+
+@{
+    ViewBag.Title = "Danh sách phiếu phạt";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danh Sách Phiếu Trả</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .find {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 35px;
+            margin-right: 11px;
+        }
+
+        .btn-tim {
+            width: 80px;
+            height: 31px;
+            border-radius: 7px;
+            background-color: #646855;
+            color: #fff;
+        }
+
+        table {
+            border: 1px solid #ccc;
+        }
+
+        table, th, td {
+            border: 1px solid #868585;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #eee;
+            }
+
+            table tr:nth-child(even) {
+                background-color: white;
+            }
+
+            table tr:nth-child() {
+                background-color: #555555;
+            }
+
+        .action {
+            margin-left: 20px;
+            width: 90px;
+            border: none;
+            height: 25px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #555;
+        }
+
+        .btnNopphat {
+            width: 90px;
+            font-weight: bold;
+            height: 30px;
+            color: #f4f9fb;
+            background-color: #630808;
+            border: none;
+            border-radius: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #333; font-weight: bold">
+            Danh sách Phiếu phạt
+            <img style="width: 40px; height: 40px" src="~/Content/Image/file-warning_40447.png" />
+        </h2>
+        <div>
+            <form method="get" action="/PhieuPhat/DsPhieuPhat">
+                <input type="text" class="filter find" placeholder="Nhập nội dung tìm" name="filter" value="@ViewBag.PP" />
+                <button style="margin-top:10px" type="submit" class="btn-tim">Tìm Kiếm</button>
+            </form>
+        </div>
+
+        <div class="col-sm-6" style="padding-top: 20px">
+            <a href="/PhieuPhat/DsPhieuPhat"><span style="color: red; font-weight: initial;">Xem tất cả </span></a>
+        </div>
+    </div>
+    <table class="table" style="margin-top: 20px">
+        <thead>
+            <tr style=" background-color:#555555; color: #fff">
+                <th>Mã phiếu phạt</th>
+                <th>Mã phiếu mượn</th>
+                <th>Mã độc giả</th>
+                <th>Nhân viên</th>
+                <th>Ngày lập phiếu</th>
+                <th>Tiền phạt(5000đ/lỗi)</th>
+                <th>Lý do phạt</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaPhieuPhat</td>
+                    <td>@item.MaPhieuMuon</td>
+                    <td>@item.MaDocGia</td>
+                    <td>@item.NhanVien</td>
+                    <td>@String.Format("{0: dd-MM-yyyy}",item.NgayLapPhieu)</td>
+                    <td>@string.Format("{0:#,0}", item.TienPhat)</td>
+                    <td><span style="color: red">@item.LyDoPhat</span></td>
+                    <td style="text-align: center"><a href="/PhieuPhat/xoaPP?id=@item.Id"><button class="btnNopphat" style="">Nộp phạt</button></a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="col-sm-6" style="padding-top: 20px">
+        <span style="color: red; font-weight: initial">@TempData["error"]</span>
+    </div>
+</body>
+</html>
+

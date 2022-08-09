@@ -1,0 +1,126 @@
+﻿@model IEnumerable<Quan_Ly_TV.Models.Viewmodels>
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Quan_Ly_TV.Models.QuanLyThuVienEntities1 db = new Quan_Ly_TV.Models.QuanLyThuVienEntities1();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danh Sách Phiếu Trả</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .find {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 35px;
+            margin-right: 11px;
+        }
+
+        .btn-tim {
+            width: 80px;
+            height: 31px;
+            border-radius: 7px;
+            background-color: #646855;
+            color: #fff;
+        }
+
+        table {
+            border: 1px solid #ccc;
+        }
+
+        table, th, td {
+            border: 1px solid #868585;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #eee;
+            }
+
+            table tr:nth-child(even) {
+                background-color: white;
+            }
+
+            table tr:nth-child() {
+                background-color: #555555;
+            }
+
+        .action {
+            margin-left: 20px;
+            width: 90px;
+            border: none;
+            height: 25px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #f00c0c; font-weight: bold">Tóp sách mượn nhều nhất</h2>
+       
+        <a href="/Home/themTK" style="display: block;color: #fff;margin-bottom:20px; float: right; background-color: #31708f; height: 26px;width: 150px; text-align: center; min-width: 150px; line-height: 2;">
+            + Thêm Tài Khoản
+        </a>
+    </div>
+    <table class="table" style="margin-top: 20px">
+        <thead>
+            <tr style=" background-color:#555555; color: #fff">
+                <th>Mã sách</th>
+                <th>Tên sách</th>
+                <th>Thể loại</th>
+                <th>Tác giả</th>
+                <th>Ảnh bìa</th>
+                <th>Tổng lượt mượn</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.Masach</td>
+                <td>@item.TenSach</td>
+                <td>
+                    @foreach (var loai in db.TheLoai.ToList())
+                    {
+                        if (loai.MaTheLoai.Equals(item.TheLoai))
+                        {
+                            <span>@loai.TenTheLoai</span>
+                        }
+                    }
+                </td>
+                <td>@item.TacGia</td>
+                <td><img src="@item.HinhAnh" style="width: 100px; height: 120px" /></td>
+                <td style="text-align: center; color: red">@item.TongSoLuong</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <div class="col-sm-6" style="padding-top: 20px">
+        <span style="color: red; font-weight: initial">@TempData["error"]</span>
+    </div>
+</body>
+</html>
+
+
+

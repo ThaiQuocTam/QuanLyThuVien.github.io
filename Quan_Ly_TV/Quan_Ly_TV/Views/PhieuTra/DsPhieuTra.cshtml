@@ -1,0 +1,125 @@
+﻿@model IEnumerable<Quan_Ly_TV.Models.CT_PhieuTra>
+
+@{
+    ViewBag.Title = "DsPhieuTra";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danh Sách Phiếu Trả</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .find {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 35px;
+            margin-right: 11px;
+        }
+
+        .btn-tim {
+            width: 80px;
+            height: 31px;
+            border-radius: 7px;
+            background-color: #646855;
+            color: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #eee;
+            }
+
+            table tr:nth-child(even) {
+                background-color: white;
+            }
+
+            table tr:nth-child() {
+                background-color: #555555;
+            }
+
+        .action {
+            margin-left: 20px;
+            width: 90px;
+            border: none;
+            height: 25px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #f0e70c; font-weight: bold">
+            Danh sách Phiếu trả
+            <img style="width: 40px; height: 40px" src="~/Content/Image/Childish-Note_24983.png" />
+        </h2>
+        <div>
+            <form method="get" action="/PhieuTra/DsPhieuTra">
+                <input type="text" class="find" placeholder="Nhập nội dung tìm" name="filter" value="@ViewBag.PT" />
+                <button style="margin-top:10px" type="submit" class="btn-tim">Tìm Kiếm</button>
+            </form>
+        </div>
+
+        <div class="col-sm-6" style="padding-top: 20px">
+            <a href="/PhieuTra/DsPhieuTra"><span style="color: red; font-weight: initial;">Xem tất cả </span></a>
+        </div>
+    </div>
+    <table class="table" style="margin-top: 20px">
+        <thead>
+            <tr style=" background-color:#555555; color: #fff">
+                <th>Mã phiếu trả</th>
+                <th>Mã phiếu mượn</th>
+                <th>Mã độc giả</th>
+                <th>Tên độc giả</th>
+                <th>Tên sách</th>
+                <th>Số lượng</th>
+                <th>Hạn trả sách</th>
+                <th>Ngày trả thực tế</th>
+                <th>Ghi chú</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaPhieuTra</td>
+                    <td>@item.MaPhieuMuon</td>
+                    <td>@item.MaDocGia</td>
+                    <td>@item.TenDocGia</td>
+                    <td>@item.TenSach</td>
+                    <td>@item.SoLuong</td>
+                    <td>@String.Format("{0: dd-MM-yyyy}", item.HanTra)</td>
+                    <td>@String.Format("{0: dd-MM-yyyy}", item.NgayTraThucTe)</td>
+                    <td style="color: orangered">@item.GhiChu</td>
+                    <td><a href="/PhieuTra/xoaPT?id=@item.IdCTPhieuTra"><img src="~/Asset/User/images/bin.png" /></a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="col-sm-6" style="padding-top: 20px">
+        <span style="color: red; font-weight: initial">@TempData["error"]</span>
+    </div>
+</body>
+</html>
+

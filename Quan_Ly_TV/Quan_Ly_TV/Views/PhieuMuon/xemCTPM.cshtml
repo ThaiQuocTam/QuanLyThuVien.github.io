@@ -1,0 +1,107 @@
+﻿@model List<Quan_Ly_TV.Models.CT_PhieuMuon>
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Quan_Ly_TV.Models.QuanLyThuVienEntities1 db = new Quan_Ly_TV.Models.QuanLyThuVienEntities1();
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chi tiết phiếu mượn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .find {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 35px;
+            margin-right: 11px;
+        }
+
+        .btn-tim {
+            width: 80px;
+            height: 31px;
+            border-radius: 7px;
+            background-color: #646855;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #f00c0c">Chi tiết phiếu mượn</h2>
+    </div>
+    <table class="table" style="margin-top: 30px">
+        <thead>
+            <tr>
+                <th>Mã phiếu mượn</th>
+                <th>Mã độc giả</th>
+                <th>Tên độc giả</th>
+                <th>Tên sách</th>
+                <td>Ảnh bìa</td>
+                <td>Số lượng</td>
+                <td>Ngày mượn</td>
+                <th>Hạn trả</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.MaPhieuMuon</td>
+                <td>@item.MaDocGia</td>
+                <td>@item.TenDocGia</td>
+                <td>
+                    @foreach (var sach in db.Sach.ToList())
+                    {
+                        if (sach.MaSach == item.MaSach)
+                        {
+                            <p>@sach.TenSach</p>
+                        }
+
+                    }
+                </td>
+                <td>
+                    @foreach (var sach in db.Sach.ToList())
+                    {
+                        if (sach.MaSach == item.MaSach)
+                        {
+                            <img src="@sach.AnhBia" style="width: 100px; height: 120px" />
+                        }
+                    }
+                </td>
+                <td>@item.SoLuong</td>
+                <td>
+                    @foreach (var ngaymuon in db.PhieuMuon.ToList())
+                    {
+                        if (ngaymuon.MaPhieuMuon == item.MaPhieuMuon)
+                        {
+                            <span>@String.Format("{0: dd-MM-yyyy}", ngaymuon.NgayLapPhieu)</span>
+                        }
+                    }
+                </td>
+                <td>@String.Format("{0: dd-MM-yyyy}", item.HanTra)</td>
+                <td><a href="/PhieuTra/TraSach?idPM=@item.IdCTPhieuMuon"><button> Trả Sách </button></a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <div style="text-align: right; margin-top: 8px">
+        <p><a style="color:red" href="/PhieuMuon/DanhSachPM">Quay Lại</a></p>
+    </div>
+</body>
+</html>

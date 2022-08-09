@@ -1,0 +1,116 @@
+﻿@model IEnumerable<Quan_Ly_TV.Models.TheLoai>
+
+@{
+    ViewBag.Title = "Danh mục thể loại sách";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danh Mục Thể Loại Sách</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        a:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .find {
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 35px;
+            margin-right: 11px;
+        }
+
+        .btn-tim {
+            width: 80px;
+            height: 31px;
+            border-radius: 7px;
+            background-color: #646855;
+            color: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #eee;
+            }
+
+            table tr:nth-child(even) {
+                background-color: white;
+            }
+
+            table tr:nth-child() {
+                background-color: #555555;
+            }
+
+        .action {
+            margin-left: 20px;
+            width: 90px;
+            border: none;
+            height: 25px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #f00c0c; font-weight: bold">
+            Danh mục thể loại sách
+            <img style="width: 40px; height: 40px" src="~/Content/Image/1486486297-attribute-category-label-shop-price-price-tag-tag_81213.png" />
+        </h2>
+        <div>
+            <form method="get" action="/Theloai/DanhSachTL">
+                <input type="text" class="find" placeholder="Nhập nội dung tìm" name="filter" value="@ViewBag.PM" />
+                <button style="margin-top:10px" type="submit" class="btn-tim">Tìm Kiếm</button>
+            </form>
+        </div>
+
+        <div class="col-sm-6" style="padding-top: 20px">
+            <a href="/TheLoai/DanhSachTL"><span style="color: red; font-weight: initial">Xem tất cả </span></a>
+        </div>
+
+    </div>
+    <a href="/TheLoai/themTL" style="display: block;margin-bottom:20px;color: #fff; float: right; background-color: #31708f; height: 26px; text-align: center; width: 150px; line-height: 2;">
+        + Thêm Thể Loại
+    </a>
+    <table class="table">
+        <thead>
+            <tr style=" background-color:#555555; color: #fff">
+                <th>Mã thể loại</th>
+                <th>Tên thể loại</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaTheLoai</td>
+                    <td>@item.TenTheLoai</td>
+                    <td><a href="/TheLoai/xoaTL?maTL=@item.MaTheLoai"><img src="~/Asset/User/images/bin.png" /></a></td>
+                    <td><a href="/TheLoai/suaTL?maTL=@item.IdTL"><img style="width: 20px; height: 20px" src="~/Asset/User/images/edit--v1.png" /></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="col-sm-6" style="padding-top: 20px">
+        <span style="color: red; font-weight: initial">@TempData["ThongBao"]</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+﻿@{
+    Layout = null;
+    Quan_Ly_TV.Models.QuanLyThuVienEntities1 db = new Quan_Ly_TV.Models.QuanLyThuVienEntities1();
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="/Asset/User/css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .bg-register-image {
+            background: url("https://img.lovepik.com/photo/40190/9674.jpg_wh300.jpg") no-repeat center;
+        }
+    </style>
+</head>
+
+@{ if (ViewBag.ID != null)
+    {
+        int id = ViewBag.ID;
+
+        var CTPM = db.CT_PhieuMuon.Find(id);
+
+        <body class="">
+            <div class="container">
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-5 d-none d-lg-block bg-register-image"><img style="background: url('https://img.lovepik.com/photo/40190/9674.jpg_wh300.jpg')" /></div>
+                            <div class="col-lg-7">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Thông tin trả sách</h1>
+                                    </div>
+                                    <form class="user" method="post">
+                                        <div class="form-group row">
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <input type="text" class="form-control form-control-user" id="exampleFirstName" name="MaPhieuTra"
+                                                       placeholder="NHẬP MÃ PHIẾU TRẢ">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control form-control-user" id="exampleLastName" name="MaPhieuMuon" value="@CTPM.MaPhieuMuon" readonly />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control form-control-user" id="exampleLastName" name="MaDocGia" value="@CTPM.MaDocGia" readonly>
+                                            </div>
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <input type="text" class="form-control form-control-user" id="exampleLastName" name="TenDocGia" value="@CTPM.TenDocGia" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                @foreach (var sach in db.Sach.ToList())
+                                                {
+                                                    if (sach.MaSach == CTPM.MaSach)
+                                                    {
+                                                        <input type="text" class="form-control form-control-user" id="exampleLastName" name="TenSach" value="@sach.TenSach" readonly>
+                                                    }
+                         
+                                                }
+                                            </div>
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <input class="form-control form-control-user" id="exampleLastName" name="SoLuong"  value="@CTPM.SoLuong" readonly />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label>Hạn trả : </label>
+                                                <br />
+                                                <input class="form-control form-control-user" id="exampleLastName" name="HanTra" value="@String.Format("{0: dd-MM-yyyy}", CTPM.HanTra)">
+                                            </div>
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <label>Ngày trả thực tế : </label>
+                                                <br />
+                                                <input type="date" class="form-control form-control-user" id="exampleLastName" name="NgayTraThucTe" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <textarea style="width: 532px" class="form-control form-control-user" id="exampleLastName" name="GhiChu" placeholder="GHI CHÚ"></textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                                            Xác nhận
+                                        </button>
+                                        <div class="col-sm-6" style="padding-top: 20px">
+                                            <span style="color: red; font-weight: initial">@TempData["thongbao"]</span>
+                                        </div>
+                                        <div style="text-align: right; margin-top: 8px">
+                                            <p><a href="/PhieuMuon/xemCTPM?maDG=@CTPM.MaDocGia">Quay Lại</a></p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap core JavaScript-->
+            <script src="/Asset/User/vendor/jquery/jquery.min.js"></script>
+            <script src="/Asset/User/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="/Asset/User/vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="/Asset/User/js/sb-admin-2.min.js"></script>
+        </body>
+}
+else
+{
+    <body class="">
+        <div class="container">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-5 d-none d-lg-block bg-register-image"><img style="background: url('https://img.lovepik.com/photo/40190/9674.jpg_wh300.jpg')" /></div>
+                        <div class="col-lg-7">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Thông tin trả sách</h1>
+                                </div>
+                                <form class="user" method="post">
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="exampleFirstName" name="MaPhieuTra" value="@ViewBag.MaPT"
+                                                   placeholder="NHẬP MÃ PHIẾU TRẢ">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control form-control-user" id="exampleLastName" name="MaPhieuMuon" readonly value="@ViewBag.MaPM" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control form-control-user" id="exampleLastName" name="MaDocGia" readonly value="@ViewBag.MaDG"/>
+                                        </div>
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="exampleLastName" name="TenDocGia"  readonly value="@ViewBag.TenDG"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control form-control-user" id="exampleLastName" name="TenSach"  readonly value="@ViewBag.TenSach"/>
+                                        </div>
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <input type="number" class="form-control form-control-user" id="exampleLastName" name="SoLuong" readonly value="@ViewBag.Soluong"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <label>Hạn trả : </label>
+                                            <br />
+                                            <input class="form-control form-control-user" id="exampleLastName" name="HanTra" value="@String.Format("{0: dd-MM-yyyy}", ViewBag.Hantra)"/>
+                                        </div>
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <label>Ngày trả thực tế : </label>
+                                            <br />
+                                            <input type="date" class="form-control form-control-user" id="exampleLastName" name="NgayTraThucTe" value="@ViewBag.NGTT"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <textarea style="width: 532px" class="form-control form-control-user" id="exampleLastName" name="GhiChu" value="@ViewBag.Ghichu" placeholder="GHI CHÚ"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Xác nhận
+                                    </button>
+                                    <div class="col-sm-6" style="padding-top: 20px">
+                                        <span style="color: red; font-weight: initial">@TempData["thongbao"]</span>
+                                    </div>
+                                    <div style="text-align: right; margin-top: 8px">
+                                        <p><a href="/PhieuMuon/xemCTPM?maDG=@ViewBag.MaDG">Quay Lại</a></p>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="/Asset/User/vendor/jquery/jquery.min.js"></script>
+        <script src="/Asset/User/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="/Asset/User/vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="/Asset/User/js/sb-admin-2.min.js"></script>
+    </body>
+
+}
+}</html>
